@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_item_descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição da tarefa"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/txt_item_data_hora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="30/04/2018 14:00"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"/>
+
+
+</RelativeLayout>
