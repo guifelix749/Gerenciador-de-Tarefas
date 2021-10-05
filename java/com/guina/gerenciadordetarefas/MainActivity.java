@@ -55,7 +55,9 @@ public class MainActivity extends AppCompatActivity {
                 new ActivityResultCallback<ActivityResult>() {
             @Override
             public void onActivityResult(ActivityResult result) {
-                Snackbar.make(findViewById(R.id.list_view), "Tarefa Cadastrada Com Sucesso!", Snackbar.LENGTH_LONG).show();
+                if(result.getResultCode() == RESULT_OK) {
+                    Snackbar.make(findViewById(R.id.list_view), "Tarefa Cadastrada Com Sucesso!", Snackbar.LENGTH_LONG).show();
+                }
             }
         });
         
